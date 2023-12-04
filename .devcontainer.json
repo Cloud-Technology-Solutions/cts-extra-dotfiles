@@ -1,0 +1,20 @@
+{
+	"name": "Debian",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"timonwong.shellcheck",
+				"foxundermoon.shell-format"
+			]
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/python:1": {}
+	},
+	"postAttachCommand": {
+		"safe-dir": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+		"pre-commit": "pip3 install --user pre-commit",
+		"git-init": "git init"
+	}
+}
