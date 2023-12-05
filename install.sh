@@ -29,4 +29,4 @@ git clone --depth=1 $POWERLEVEL10K_REPO "$HOME/powerlevel10k"
 
 cat zshrc >>"$HOME/.zshrc"
 
-chsh /usr/bin/zsh
+sudo chsh -s "$(which zsh)" "$(whoami)"
