@@ -14,6 +14,8 @@ plugins=(
   kubectl
   zsh-autosuggestions
   zsh-syntax-highlighting
+  terraform
+  terragrunt
 )
 
 source $ZSH/oh-my-zsh.sh
