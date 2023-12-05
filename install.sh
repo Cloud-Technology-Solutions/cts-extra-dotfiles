@@ -25,7 +25,7 @@ sudo apt-get install --assume-yes --no-install-recommends zsh
 git clone $ZSH_SUGGESTIONS_REPO "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
 git clone $ZSH_HIGHLIGHTING_REPO "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
 git clone $TG_PLUGIN_REPO "$HOME/.oh-my-zsh/custom/plugins/terragrunt"
-git clone --depth=1 $POWERLEVEL10K_REPO "$HOME/powerlevel10k"
+git clone --depth=1 $POWERLEVEL10K_REPO "$HOME/.oh-my-zsh/custom/themes/powerlevel10k"
 
 cat zshrc >>"$HOME/.zshrc"
 
