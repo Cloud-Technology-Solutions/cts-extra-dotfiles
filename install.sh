@@ -19,9 +19,6 @@ ZSH_HIGHLIGHTING_REPO=https://github.com/zsh-users/zsh-syntax-highlighting.git
 POWERLEVEL10K_REPO=https://github.com/romkatv/powerlevel10k.git
 TG_PLUGIN_REPO=https://github.com/jkavan/terragrunt-oh-my-zsh-plugin
 
-sudo apt-get update
-sudo apt-get install --assume-yes --no-install-recommends zsh
-
 git clone $ZSH_SUGGESTIONS_REPO "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
 git clone $ZSH_HIGHLIGHTING_REPO "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
 git clone $TG_PLUGIN_REPO "$HOME/.oh-my-zsh/custom/plugins/terragrunt"
