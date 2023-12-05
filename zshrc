@@ -10,8 +10,6 @@ export ZSH=$HOME/.oh-my-zsh
 
 alias cat='bat --paging=never'
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-
 ZSH_THEME="powerlevel10k/powerlevel10k"
 DISABLE_UPDATE_PROMPT="true"
 
