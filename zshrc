@@ -30,4 +30,5 @@ source $ZSH/oh-my-zsh.sh
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-[ -d "$(dirname $(which gcloud))" ] && source $(dirname $(which gcloud))/../*.zsh.inc
+GCLOUD_DIR="$(dirname $(which gcloud))"
+[ -d "$GCLOUD_DIR" ] && source "$GCLOUD_DIR/../"*.zsh.inc
