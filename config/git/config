@@ -1,9 +1,0 @@
-[push]
-  default = current
-[fetch]
-  prune = true
-[init]
-  defaultBranch = main
-  templateDir = ~/.config/git/templates
-[pull]
-  rebase = true
