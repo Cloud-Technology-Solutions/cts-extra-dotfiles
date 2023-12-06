@@ -25,5 +25,3 @@ git clone $TG_PLUGIN_REPO "$HOME/.oh-my-zsh/custom/plugins/terragrunt"
 git clone --depth=1 $POWERLEVEL10K_REPO "$HOME/.oh-my-zsh/custom/themes/powerlevel10k"
 
 cat zshrc >>"$HOME/.zshrc"
-
-sudo chsh -s "$(which zsh)" "$(whoami)"

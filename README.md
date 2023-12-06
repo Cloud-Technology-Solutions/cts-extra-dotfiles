@@ -10,7 +10,7 @@ create a dotfiles repository, then add the following lines to your VSCode
 config:
 
 ```json
-    "dotfiles.repository": "example/dotfiles",
+    "dotfiles.repository": "Cloud-Technology-Solutions/cts-extra-dotfiles",
     "dotfiles.targetPath": "$HOME/dotfiles",
     "dotfiles.installCommand": "$HOME/dotfiles/install.sh",
 ```
@@ -19,13 +19,15 @@ Whenever you open a repository in a devcontainer from now on, the dotfiles repo
 will automatically be cloned and the installation script run while the
 container is created.
 
+Remember to set your default shell profile in VSCode to zsh so that this will
+apply for all terminals opened.
+
 ## Contents
 
 -   A devcontainer for this repo. Also includes sample `postAttachCommand`
     directives which will pull in any Git hooks configured with the
     `init.templateDir` option.
+-   Sample Git config.
 -   An installation script which creates a local `bin` directory, copies local
     config files across, and installs some useful utilities.
--   Sample Git config, including a hook that can be used to lint commit
-    messages - this is not full-featured but avoids the need to install Node to
-    run `commitlint`.
+-   Lots of nice zsh configuration.
